@@ -10,7 +10,9 @@ class LogInService {
 
     suspend fun getLogIn(idUsuario:String, clave:String):LoggedInfoUser? {
         return withContext(Dispatchers.IO) {
+            println("Service before,${idUsuario},${clave}\n")
             val response = retrofit.create(SophosApiClient::class.java).getLogIn(idUsuario, clave)
+            println("Service after\n")
             response.body()
         }
     }

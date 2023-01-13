@@ -13,6 +13,8 @@ import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import com.example.sophosmobileproject.R
 import com.example.sophosmobileproject.databinding.FragmentLoginBinding
 
@@ -25,6 +27,11 @@ class LoginFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+
+    class menuFragment : Fragment(R.layout.fragment_maps)
+
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -35,6 +42,8 @@ class LoginFragment : Fragment() {
         return binding.root
 
     }
+    private lateinit var navController: NavController
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -45,6 +54,7 @@ class LoginFragment : Fragment() {
         val passwordEditText = binding.password
         val loginButton = binding.login
         val loadingProgressBar = binding.loading
+//        navController = findNavController(R.id.nav_host_fragment)
 
         loginViewModel.loginFormState.observe(viewLifecycleOwner,
             Observer { loginFormState ->
@@ -69,10 +79,11 @@ class LoginFragment : Fragment() {
                 }
                 loginResult.success?.let {
                     updateUiWithUser(it)
+                    findNavController().navigate(R.id.action_loginFragment_to_menuFragment)
                 }
             })
 
-        val afterTextChangedListener = object : TextWatcher {
+            val afterTextChangedListener = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
                 // ignore
             }
@@ -114,6 +125,7 @@ class LoginFragment : Fragment() {
         // TODO : initiate successful logged in experience
         val appContext = context?.applicationContext ?: return
         Toast.makeText(appContext, welcome, Toast.LENGTH_LONG).show()
+
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
@@ -126,6 +138,8 @@ class LoginFragment : Fragment() {
         _binding = null
     }
 }
+
+
 
 /**
 * Extension function to simplify setting an afterTextChanged action to EditText components.

@@ -31,6 +31,7 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
                             email = result.data.userId
                         )
                     )
+                
             } else {
                 _loginResult.value = LoginResult(error = R.string.login_failed)
             }
