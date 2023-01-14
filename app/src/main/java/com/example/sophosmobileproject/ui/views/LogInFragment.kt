@@ -17,8 +17,13 @@ import androidx.navigation.fragment.findNavController
 import com.example.sophosmobileproject.R
 import com.example.sophosmobileproject.data.model.LoggedInUserView
 import com.example.sophosmobileproject.databinding.FragmentLoginBinding
+<<<<<<<< HEAD:app/src/main/java/com/example/sophosmobileproject/ui/views/LogInFragment.kt
 import com.example.sophosmobileproject.ui.viewmodel.LoginViewModel
 import com.example.sophosmobileproject.ui.viewmodel.LoginViewModelFactory
+========
+import com.example.sophosmobileproject.ui.viewmodel.LoginViewModelFactory
+import com.example.sophosmobileproject.ui.viewmodel.LoginViewModel
+>>>>>>>> ac9c9f0 (progress of the challenge callenge end):app/src/main/java/com/example/sophosmobileproject/ui/views/LoginFragment.kt
 
 class LogInFragment : Fragment() {
 
