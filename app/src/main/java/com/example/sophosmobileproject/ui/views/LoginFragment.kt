@@ -1,4 +1,4 @@
-package com.example.sophosmobileproject.ui.login
+package com.example.sophosmobileproject.ui.views
 
 import android.os.Bundle
 import android.text.Editable
@@ -15,7 +15,10 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.sophosmobileproject.R
+import com.example.sophosmobileproject.data.model.LoggedInUserView
 import com.example.sophosmobileproject.databinding.FragmentLoginBinding
+import com.example.sophosmobileproject.ui.viewmodel.LoginViewModelFactory
+import com.example.sophosmobileproject.ui.viewmodel.LoginViewModel
 
 class LoginFragment : Fragment() {
 

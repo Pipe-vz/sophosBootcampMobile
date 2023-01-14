@@ -1,6 +1,7 @@
 package com.example.sophosmobileproject.data.network
 
 import com.example.sophosmobileproject.data.model.DocumentsModel
+import com.example.sophosmobileproject.data.model.LocationsModel
 import com.example.sophosmobileproject.data.model.LoggedInfoUser
 import retrofit2.Response
 import retrofit2.http.GET
@@ -18,10 +19,15 @@ interface SophosApiClient {
 
     //@GET("/RS_Documentos/$id")
     //suspend fun getAllDocuments():Response<List<DocumentsModel>>
+
     @GET("/RS_Usuarios")
     suspend fun getLogIn(
         @Query("idUsuario") idUsuario: String?,
-        @Query("clave") clave: String?
+        @Query("clave") clave: String?,
     ): Response<LoggedInfoUser>
+
+    @GET("/RS_Oficinas")
+    suspend fun getAllLocations():Response<LocationsModel>
+
 
 }

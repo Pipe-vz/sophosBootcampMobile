@@ -1,4 +1,4 @@
-package com.example.sophosmobileproject.ui.login
+package com.example.sophosmobileproject.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

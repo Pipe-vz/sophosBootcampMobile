@@ -1,4 +1,4 @@
-package com.example.sophosmobileproject.ui.login
+package com.example.sophosmobileproject.ui.viewmodel
 
 import android.util.Patterns
 import androidx.lifecycle.LiveData
@@ -8,6 +8,9 @@ import androidx.lifecycle.viewModelScope
 import com.example.sophosmobileproject.R
 import com.example.sophosmobileproject.data.LoginRepository
 import com.example.sophosmobileproject.data.Result
+import com.example.sophosmobileproject.data.model.LoggedInUserView
+import com.example.sophosmobileproject.data.model.LoginFormState
+import com.example.sophosmobileproject.data.model.LoginResult
 import kotlinx.coroutines.launch
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {

@@ -1,4 +1,4 @@
-package com.example.sophosmobileproject.ui.login
+package com.example.sophosmobileproject.data.model
 
 /**
  * User details post authentication that is exposed to the UI

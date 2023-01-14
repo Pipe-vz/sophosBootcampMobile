@@ -12,3 +12,4 @@ data class DocumentsModel(
     @SerializedName("quote") val Nombre: String,
     @SerializedName("author") val Apellido: String
 )
+
