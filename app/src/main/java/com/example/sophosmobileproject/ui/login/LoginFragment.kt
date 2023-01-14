@@ -13,7 +13,6 @@ import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.example.sophosmobileproject.R
 import com.example.sophosmobileproject.databinding.FragmentLoginBinding
@@ -27,10 +26,7 @@ class LoginFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-
-    class menuFragment : Fragment(R.layout.fragment_maps)
-
-
+    class MenuFragment : Fragment(R.layout.fragment_maps)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,8 +38,6 @@ class LoginFragment : Fragment() {
         return binding.root
 
     }
-    private lateinit var navController: NavController
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -54,7 +48,6 @@ class LoginFragment : Fragment() {
         val passwordEditText = binding.password
         val loginButton = binding.login
         val loadingProgressBar = binding.loading
-//        navController = findNavController(R.id.nav_host_fragment)
 
         loginViewModel.loginFormState.observe(viewLifecycleOwner,
             Observer { loginFormState ->
