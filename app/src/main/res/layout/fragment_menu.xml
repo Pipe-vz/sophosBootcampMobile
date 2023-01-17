@@ -5,160 +5,112 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/design_default_color_background"
-    tools:context=".ui.views.MenuFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.views.MenuFragment">
 
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/user"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="20sp"
-                    android:contentDescription="@string/name_description"
-                    android:text="@string/user_name"
-                    android:textColor="@color/textColor1"
-                    android:textStyle="bold"
-                    android:padding="10sp"/>
-
-                <ImageButton
-                    android:id="@+id/menu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
-                    android:src="@drawable/menu"
-                    android:padding="10sp"
-                    android:minWidth="32sp"
-                    android:background="@color/design_default_color_background"
-                    android:minHeight="48sp"
-                    tools:ignore="SpeakableTextPresentCheck"
-                    android:contentDescription="@string/desc_menu_button" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            </FrameLayout>
-
-
-        </androidx.appcompat.widget.Toolbar>
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="200sp"
-                android:layout_marginTop="0sp"
-                android:layout_marginEnd="0sp"
-                android:background="@drawable/plantilla_corporativa"
-                android:contentDescription="@string/imagen_corporativa"
-                android:scaleType="fitEnd"/>
+            android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/user"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="52dp"
-                android:gravity="center_horizontal|center_vertical"
-                android:padding="20sp"
-                android:text="@string/bienvenido"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="40dp" />
+                android:layout_height="match_parent"
+                android:contentDescription="@string/name_description"
+                android:padding="10sp"
+                android:text="@string/user_name"
+                android:textColor="@color/textColor1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="150sp"
-                android:layout_height="40dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="68dp"
-                android:gravity="center_horizontal|center_vertical"
-                android:padding="5sp"
-                android:text="@string/text_opciones"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
-        </FrameLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_margin="15sp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border_style2">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/document"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10sp"
-                    android:padding="10sp"
-                    android:text="@string/send_doc"
-                    android:textColor="@color/textColor2"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-            <FrameLayout
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="end"
+                android:background="@color/design_default_color_background"
+                android:contentDescription="@string/desc_menu_button"
+                android:minWidth="32sp"
+                android:minHeight="48sp"
+                android:padding="10sp"
+                android:src="@drawable/menu"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/btnSendDocs"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:background="@drawable/border_style2"
-                    android:paddingStart="35sp"
-                    android:paddingEnd="35sp"
-                    android:text="@string/in"
-                    android:textColor="@color/textColor2"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
+        </FrameLayout>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end|center"
-                    android:padding="5sp"
-                    android:src="@drawable/arrow_right1" />
-            </FrameLayout>
-        </LinearLayout>
-        <LinearLayout
-        android:orientation="vertical"
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_margin="15sp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:layout_marginTop="0sp"
+            android:layout_marginEnd="0sp"
+            android:background="@drawable/plantilla_corporativa"
+            android:contentDescription="@string/imagen_corporativa"
+            android:scaleType="fitEnd" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="20sp"
+            android:text="@string/bienvenido"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150sp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="68dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="5sp"
+            android:text="@string/text_opciones"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border_style3">
+        android:layout_margin="15sp"
+        android:background="@drawable/border_style2"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/document2"/>
+                android:src="@drawable/document" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -166,14 +118,71 @@
                 android:layout_marginStart="10sp"
                 android:padding="10sp"
                 android:text="@string/send_doc"
+                android:textColor="@color/textColor2"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnSendDocs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/border_style2"
+                android:paddingStart="35sp"
+                android:paddingEnd="35sp"
+                android:text="@string/in"
+                android:textColor="@color/textColor2"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:padding="5sp"
+                android:src="@drawable/arrow_right1" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:background="@drawable/border_style3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/document2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:padding="10sp"
+                android:text="Ver documentos"
                 android:textColor="@color/textColor3"
                 android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <FrameLayout
-            android:layout_gravity="end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:orientation="horizontal">
 
             <TextView
@@ -197,35 +206,42 @@
                 android:src="@drawable/arrow_right2" />
         </FrameLayout>
     </LinearLayout>
-        <LinearLayout
-        android:orientation="vertical"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_margin="15sp"
         android:layout_height="wrap_content"
-        android:background="@drawable/border_style4">
+        android:layout_margin="15sp"
+        android:background="@drawable/border_style4"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/location"/>
+                android:src="@drawable/location" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10sp"
                 android:padding="10sp"
-                android:text="@string/send_doc"
+                android:text="Oficinas"
                 android:textColor="@color/textColor4"
                 android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <FrameLayout
-            android:layout_gravity="end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/btnOffices"
                 android:layout_width="wrap_content"
@@ -238,6 +254,7 @@
                 android:textColor="@color/textColor4"
                 android:textSize="12sp"
                 android:textStyle="bold" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

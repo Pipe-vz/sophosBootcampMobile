@@ -6,7 +6,7 @@
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.sophosmobileproject.ui.login.LoginFragment"
+        android:name="com.example.sophosmobileproject.ui.views.LogInFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action

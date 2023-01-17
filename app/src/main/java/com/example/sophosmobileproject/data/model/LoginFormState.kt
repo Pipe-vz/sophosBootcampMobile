@@ -1,4 +1,4 @@
-package com.example.sophosmobileproject.ui.login
+package com.example.sophosmobileproject.data.model
 
 /**
  * Data validation state of the login form.
