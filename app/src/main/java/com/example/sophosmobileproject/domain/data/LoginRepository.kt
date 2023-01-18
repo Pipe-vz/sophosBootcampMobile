@@ -1,6 +1,6 @@
-package com.example.sophosmobileproject.data
+package com.example.sophosmobileproject.domain.data
 
-import com.example.sophosmobileproject.data.model.LoggedInUser
+import com.example.sophosmobileproject.domain.data.model.LoggedInUser
 
 /**
  * Class that requests authentication and user information from the remote data source and

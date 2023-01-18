@@ -1,8 +1,8 @@
-package com.example.sophosmobileproject.data.network
+package com.example.sophosmobileproject.domain.data.network
 
-import com.example.sophosmobileproject.data.model.DocumentsModel
-import com.example.sophosmobileproject.data.model.LocationsModel
-import com.example.sophosmobileproject.data.model.LoggedInfoUser
+import com.example.sophosmobileproject.domain.data.model.DocumentsModel
+import com.example.sophosmobileproject.domain.data.model.LocationsModel
+import com.example.sophosmobileproject.domain.data.model.LoggedInfoUser
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

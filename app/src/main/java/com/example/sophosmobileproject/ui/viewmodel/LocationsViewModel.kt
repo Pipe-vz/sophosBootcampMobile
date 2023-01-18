@@ -3,7 +3,7 @@ package com.example.sophosmobileproject.ui.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.sophosmobileproject.data.model.LocationsModel
+import com.example.sophosmobileproject.domain.data.model.LocationsModel
 import com.example.sophosmobileproject.domain.GetLocationsUseCase
 import kotlinx.coroutines.launch
 

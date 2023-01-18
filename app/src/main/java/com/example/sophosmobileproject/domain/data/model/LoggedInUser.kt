@@ -1,4 +1,4 @@
-package com.example.sophosmobileproject.data.model
+package com.example.sophosmobileproject.domain.data.model
 
 data class LoggedInUser (
     val userId: String,

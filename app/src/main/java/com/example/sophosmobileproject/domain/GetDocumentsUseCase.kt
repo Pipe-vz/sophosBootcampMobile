@@ -1,7 +1,7 @@
 package com.example.sophosmobileproject.domain
 
-import com.example.sophosmobileproject.data.DocumentsRepository
-import com.example.sophosmobileproject.data.model.DocumentsModel
+import com.example.sophosmobileproject.domain.data.DocumentsRepository
+import com.example.sophosmobileproject.domain.data.model.DocumentsModel
 
 class GetDocumentsUseCase {
 

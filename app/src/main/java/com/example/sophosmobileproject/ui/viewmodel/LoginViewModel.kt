@@ -6,11 +6,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.sophosmobileproject.R
-import com.example.sophosmobileproject.data.LoginRepository
-import com.example.sophosmobileproject.data.Result
-import com.example.sophosmobileproject.data.model.LoggedInUserView
-import com.example.sophosmobileproject.data.model.LoginFormState
-import com.example.sophosmobileproject.data.model.LoginResult
+import com.example.sophosmobileproject.domain.data.LoginRepository
+import com.example.sophosmobileproject.domain.data.Result
+import com.example.sophosmobileproject.domain.data.model.LoggedInUserView
+import com.example.sophosmobileproject.domain.data.model.LoginFormState
+import com.example.sophosmobileproject.domain.data.model.LoginResult
 import kotlinx.coroutines.launch
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {

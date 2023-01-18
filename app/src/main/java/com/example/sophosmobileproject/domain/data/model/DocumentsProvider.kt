@@ -1,4 +1,4 @@
-package com.example.sophosmobileproject.data.model
+package com.example.sophosmobileproject.domain.data.model
 
 class DocumentsProvider {
     companion object{

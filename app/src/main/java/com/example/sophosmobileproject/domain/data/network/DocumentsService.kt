@@ -1,7 +1,7 @@
-package com.example.sophosmobileproject.data.network
+package com.example.sophosmobileproject.domain.data.network
 
 import com.example.sophosmobileproject.core.RetrofitHelper
-import com.example.sophosmobileproject.data.model.DocumentsModel
+import com.example.sophosmobileproject.domain.data.model.DocumentsModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -2,8 +2,8 @@ package com.example.sophosmobileproject.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.sophosmobileproject.data.LoginDataSource
-import com.example.sophosmobileproject.data.LoginRepository
+import com.example.sophosmobileproject.domain.data.LoginDataSource
+import com.example.sophosmobileproject.domain.data.LoginRepository
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

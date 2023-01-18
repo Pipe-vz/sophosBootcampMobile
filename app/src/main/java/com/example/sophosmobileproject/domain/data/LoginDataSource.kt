@@ -1,8 +1,8 @@
-package com.example.sophosmobileproject.data
+package com.example.sophosmobileproject.domain.data
 
-import com.example.sophosmobileproject.data.model.LoggedInUser
-import com.example.sophosmobileproject.data.model.LoggedInfoUser
-import com.example.sophosmobileproject.data.network.LogInService
+import com.example.sophosmobileproject.domain.data.model.LoggedInUser
+import com.example.sophosmobileproject.domain.data.model.LoggedInfoUser
+import com.example.sophosmobileproject.domain.data.network.LogInService
 import java.io.IOException
 
 /**
